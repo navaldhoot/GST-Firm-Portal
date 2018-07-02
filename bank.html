@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<link rel="shortcut icon" href="favicongst.ico" />
+
+	<!------TITLE----------->
+	<title>BANK TRANSACTION</title>
+	<!----------INCLUSION OF FONT AWESOME LIBRARY---------------->
+	<script src="https://use.fontawesome.com/7d44bc7623.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+	<!------------BOOTSTRAP  FILE---------->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<!-----------CSS FILE---------->
+	<link rel="stylesheet"  type="text/css" href="css/register.css">
+<style>
+  .header{
+	padding:0px;
+	background:white;
+}
+.logo img{
+	height:180px;
+}
+.heading h1
+{
+font-family: Open Sans, sans-serif;
+font-weight: 800;
+font-size: 45px;
+}
+.heading h3
+{
+font-family: Open Sans, sans-serif;
+font-weight: normal;
+font-size: 30px;
+}
+
+.head-under {
+	width:300px;
+    border: 2px solid #0a4bff;
+    margin-right: 50%;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+.login-menu{
+background:#235c73;
+}
+
+.login-menu a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:300;
+
+}
+
+.login-menu ul li{
+display:inline-block;
+padding:10px;	
+}
+
+.menu-center{
+text-align:center;
+}
+footer{
+background:#235c73;
+text-align:center;
+color:white;
+font-size:20px;
+}
+  
+</style>
+
+<script type="text/javascipt">
+	function form()
+	{
+			document.getElementById("item_table").display="none";
+			document.getElementById("item_form").display=" ";
+	}
+	function table()
+	{
+			document.getElementById("item_table").display=" ";
+			document.getElementById("item_form").display="none";
+		//document.getElementById("item_form").readOnly=true;
+	}
+</script>
+	
+</head>
+
+
+<body>
+
+	<div class="container-fluid">
+		<div class="row header">
+            <div class="col-md-4 col-sm-4 logo">
+                	<img src="images/logo.png" alt="gst Icon">
+            </div>
+            <div class="col-md-8 col-sm-8 heading">
+				<h1>GST Firm Portal</h1>      
+				<hr class="head-under">
+				<h3>Mission, Vision & Values</h3>
+			</div>
+		</div>			
+
+	<!---------------------MENU ------------------------->
+	<div class="row login-menu">
+	
+	<div class="col-md-12 menu-center">
+
+		<ul>
+				<li><a href="login_homepage.html">Home</a></li>
+				<li><a href="profile_page.php">Profile</a></li>
+				<li><a href="item.html">Products</a></li>
+				<li><a href="purchase.html">Purchases</a></li>
+				<li><a href="bill.html">Bill Generation</a></li>
+				<li><a href="table.php">Table Representation</a></li>
+				<li><a href="#">Bank Details</a></li>
+   			<li class="logout"><a href="logout.php"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+			<ul>
+
+    
+    
+	</div>
+	</div>
+	
+			
+		
+
+
+
+
+
+
+
+
+
+			
+			
+
+<form action="bank_submit.php" method="post" class="col-sm-12 ftxt name="Detail">
+<script>
+function disablefield(){ 
+if (document.getElementById('yes_radio1').checked == 1){ 
+document.getElementById('Credit').disabled='disabled'; 
+document.getElementById('Credit').setAttribute=('value','10');
+ 
+document.getElementById('Debit').disabled=false; 
+document.getElementById('Debit').value=' '; } 
+} 
+function disablefield1(){ 
+if (document.getElementById('yes_radio2').checked == 1){ 
+document.getElementById('Debit').disabled='disabled'; 
+document.getElementById('Debit').setAttribute=('value','20');
+
+document.getElementById('Credit').disabled=false; 
+document.getElementById('Credit').value=''; }  
+}
+
+	</script>
+		
+		<h1>Bank Transaction Details</h1>
+	<div class="row">
+			<div class="col-md-4">
+				CHOOSE FROM
+			</div>
+			
+			<div class="col-md-8">
+				<input type="radio" name="radiobutton" id="yes_radio2" onChange="disablefield1();">Credit
+				<input type="radio" name="radiobutton" id="yes_radio1" onChange="disablefield();"> Debit
+			</div>
+	</div>
+		<div class="row">
+			<div class="col-md-4">
+				<p><b>Date</b>
+			</div>
+			<div class="col-md-8">
+				<input type="date" name="Date" >
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-4">
+				<p><b>Detail</b>
+			</div>
+			<div class="col-md-8">
+				<input type="text" name="Detail">
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-4">
+				<p><b>Cheque</b>
+			</div>
+			<div class="col-md-8">
+				<input type="text" name="Cheque">
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-4">
+				<b>Debit
+				</b>
+			</div>
+			<div class="col-md-8">
+				<input type="text" name="Debit" id="Debit">
+			<!--<input type="hidden" name="Debit" id="A" value="  "/>-->
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-4">
+				<b>Credit</b>
+			</div>
+			<div class="col-md-8">
+				<input type="text" name="Credit" id="Credit">
+			<!--<input type="hidden" name="Credit" id="A" value="  "/>-->
+			</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-4">
+				<p><b>Balance</b>
+			</div>
+			<div class="col-md-8">
+				<input type="text" name="Balance">
+			</div>
+		</div>
+		</div>
+		<br/>
+		<div class="row">
+			<div class="col-md-1">
+				<input type="submit"  value="SUBMIT"/>
+			</div>
+			<div class ="col-md-1">
+			<input type="reset" value="Reset"/>
+			</div>
+		</div>
+	
+	
+	
+		
+	
+			<!-- FOOTER ROW--->
+	<div class="row">
+		<footer>Copyright &copy;
+		ANNS
+		</footer>
+	</div>
+	<!-- END OF FOOTER ROW----------->
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</div>
+</form>
+</body>
+</html>	

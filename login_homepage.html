@@ -1,0 +1,214 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="shortcut icon" href="favicongst.ico" />
+
+  <title>Login Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+ .header{
+	padding:0px;
+	background:#11252C;
+	color:white;
+}
+.logo img{
+	height:180px;
+}
+.heading h1
+{
+font-family: Open Sans, sans-serif;
+font-weight: 800;
+font-size: 45px;
+padding-top: 20px;
+}
+.heading h3
+{
+font-family: Open Sans, sans-serif;
+font-weight: normal;
+font-size: 30px;
+}
+
+.head-under {
+	width:300px;
+    border: 2px solid #0a4bff;
+    margin-right: 50%;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+.login-menu{
+background:#235c73;
+}
+
+.login-menu a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:300;
+
+}
+
+.login-menu ul li{
+display:inline-block;
+padding:10px;	
+}
+
+.menu-center{
+text-align:center;
+}
+footer{
+background:#235c73;
+text-align:center;
+color:white;
+font-size:20px;
+}
+    
+
+
+
+
+
+
+
+
+
+
+   .container {
+  position: relative;
+}
+
+.image {
+  display: block;
+  width: 100%;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: #11252C;
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.ad{
+ font-size: 27px;
+}
+
+.pad{
+ font-size: 20px;
+ }
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+	body{
+		background-color: white ;
+		}
+  </style>
+</head>
+<body data-spy="scroll" data-target="#myScrollspy" data-offset="15" background="55.jpg">
+
+	<div class="container-fluid">
+		<div class="row header">
+            <div class="col-md-4 col-sm-4 logo">
+                	<img src="images/logo.png" alt="gst Icon">
+            </div>
+            <div class="col-md-8 col-sm-8 heading">
+				<h1>GST Firm Portal</h1>      
+				<hr>
+				<h3>Mission, Vision & Values</h3>
+			</div>
+		</div>			
+
+	<!---------------------MENU ------------------------->
+	<div class="row login-menu">
+	
+	<div class="col-md-12 menu-center">
+
+		<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="profile_page.php">Profile</a></li>
+				<li><a href="item.html">Products</a></li>
+				<li><a href="purchase.html">Purchases</a></li>
+				<li><a href="bill.html">Bill Generation</a></li>
+				<li><a href="#">Table Representation</a></li>
+				<li><a href="bank.html">Bank Details</a></li>
+   			<li class="logout"><a href="logout.php"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+			<ul>
+    
+	</div>
+	</div>
+
+
+	
+	
+	<div class="container">
+  
+        <h1>Welcome Our Registered User !</h1>
+		<h2>Now you will be able to access the exclusive features of this website</h2>
+		</div>
+		
+		
+
+	<div class="container">
+<h4 class="pad">Following are the discripition of various features offered here:</h4>
+
+<h3 class="ad">Profile</h3><h4 class="pad">Here yo can view the personalinformation about you and your firm as provided by you and modify as in when you need to.
+</h4>
+
+<h3 class="ad">Products</h3><h4 class="pad">You can feed information of all the products, your firm deals with. The information fed in this module is then further used for calculations and billing via other modules.
+</h4>
+
+<h3 class="ad">Purchase</h3><h4 class="pad">Ths module contains the basic information about the products you have purchased from other firms and organizations.
+</h4>
+
+<h3 class="ad">Bill Generations</h3><h4 class="pad">This features helps you compute the bill that is inclusive of gst (corresponding to the details of the  products enterd by the user). 
+
+</h4>
+
+<h3 class="ad">Table Representation</h3><h4 class="pad">the information filled by the user is enumerated and is represented in tabular form in this section which gives a log of all the purchasing, selling and transaction done by you. 
+</h4>
+
+<h3 class="ad">Bank Details</h3><h4 class="pad">All the records of Bamk Transaction can be maintained and updated in this section.
+</h4>
+<p>The information yot are sharing with us is highly confidential and is taken solely for you convinience.
+</p>
+ </div>        
+
+
+
+
+<!-- FOOTER ROW--->
+	<div class="row">
+		<footer>Copyright &copy;
+		ANNS
+		</footer>
+	</div>
+	<!-- END OF FOOTER ROW----------->
+
+
+
+
+
+
+
+</body>
+</html>

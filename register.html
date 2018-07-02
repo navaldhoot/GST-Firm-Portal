@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicongst.ico" />
+	
+	<!------TITLE----------->
+	<title>Registration</title>
+
+	<!----------INCLUSION OF FONT AWESOME LIBRARY---------------->
+	<script src="https://use.fontawesome.com/7d44bc7623.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+
+	<!---------- INCLUSION OF VIEWPORT --------------->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	
+	<!------------BOOTSTRAP  FILE---------->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-----------CSS FILE---------->
+	<link rel="stylesheet" type="text/css" href="css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="css/register.css">
+	<link rel="stylesheet" type="text/css" href="css/common.css">
+	
+	
+	
+</head>
+<body>
+	<div class="container-fluid">
+			<div class="row header">
+            <div class="col-md-4 col-sm-4 logo">
+                	<img src="images/logo.png" alt="gst Icon">
+            </div>
+            <div class="col-md-8 col-sm-8 heading">
+				<h1>GST Firm Portal</h1>      
+				<hr class="head-under">
+				<h3>Mission, Vision & Values</h3>
+			</div>
+		</div>			
+
+			<!------ MENU ROW --------------->
+		<div class="row menu">
+		
+				<!------ MENU CODE ---------->
+				<div class="col-md-12 navigation">
+					<ul>
+						<li><a href="home.html">Home</a></li>
+						<li><a href="login.html">Login</a></li>
+						<li><a href="#">Register</a></li>
+						<li><a href="aboutus.html">About Us</a></li>
+						<li><a href="gst_rules.html">GST Rules</a></li>
+					</ul>
+				</div>
+		</div> <!-------- END OF MENU ROW---------->
+
+
+	
+	
+	
+	
+	
+	
+	
+	
+	<!----------------Registration Form-------------->
+	
+	
+		<div class="row">
+			<div class="col-md-12">
+				<h1 class="reghead">REGISTRATION FORM</h1>
+			</div>
+		</div>
+
+		<form action="register_submit.php" method="post">
+	<div class="row person">
+		<div class="col-md-12">
+				<h3 class="regsubhead">Personal Information:</h3>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-lg-4  col-md-4  col-sm-12">
+			<p><b>Name:</b></p>
+		</div>
+		<div class="col-lg-8  col-md-8  col-sm-12 name">
+			<input type="text" name="name" id="name">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Email:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="email" name="email" id="email">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Phone:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="phone" id="phone">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Address:</b></p>
+		</div>
+		<div class="col-md-8">
+			<textarea rows="5" cols="50" name="address" id="address" ></textarea>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-12">
+			<h3 class="regsubhead">Firm's Information:</h2>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm Name:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="firm_name" id="firm_name">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm Short Name:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="firm_short_name" id="firm_short_name">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm Address:</b></p>
+		</div>
+		<div class="col-md-8">
+			<textarea  rows="5" cols="50" name="firm_address" id="firm_address"></textarea>
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm Email:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="email" name="firm_email" id="firm_email">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm Phone:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="firm_phone" id="firm_phone">
+		</div>
+	</div>
+
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm GSTIN No.:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="firm_gstin_no" id="firm_gstin_no">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Area  of Business:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="area_of_business" id="area_of_business">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Items Sold:</b></p>
+		</div>
+		<div class="col-md-8">
+			<textarea rows="7"  cols="100" name="items_sold" id="items_sold"></textarea>
+		</div>
+	</div>
+
+	
+	
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Business Turnover:</b></p>
+		</div>
+		<div class="col-md-8">
+			<select name="business_turnover" id="business_turnover">
+				<option value="Select" id="Select">----Select-----</option>
+				<option value="Less Than 1,00,000" id="Less Than 1,00,000">Less Than 1,00,000</option>
+				<option value="1,00,000 - 2,00,000" id="1,00,000 - 2,00,000">1,00,000 - 2,00,000</option>
+				<option value="2,00,000 - 5,00,000" id="2,00,000 - 5,00,000">2,00,000 - 5,00,000</option>
+				<option value="5,00,000 - 10,00,000" id="5,00,000 - 10,00,000">5,00,000 - 10,00,000</option>
+				<option value="10,00,000 - 50,00,000" id="10,00,000 - 50,00,000">10,00,000 - 50,00,000</option>
+				<option value="More Than 50,00,000" id="More Than 50,00,000">More Than 50,00,000</option>
+			</select>
+		</div>
+	</div>
+
+	
+	
+	
+	<div class="row">
+		<div class="col-md-12">
+		<h3 class="regsubhead">Login Information:</h3>
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>User ID:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="user_id" id="user_id">
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Password:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="password" name="password" id="password">
+		</div>
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Confirm Password:</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="password" name="confirm_password"  id="confirm_password">
+		</div>
+	</div>
+	
+	
+	<div class="row">
+		<div class="col-md-4">
+			<input type="reset" value="CLEAR" class="sub">
+		</div>
+		<div class="col-sm-4">
+			<input  type="submit" value="SUBMIT" class="sub">
+		</div>
+	</div>
+	
+	
+	
+</form>
+		<!-- FOOTER ROW--->
+	<div class="row">
+		<footer>Copyright &copy;
+		ANNS
+		</footer>
+	</div>
+	<!-- END OF FOOTER ROW----------->
+
+		
+
+
+
+
+</div>	
+</body>
+</html>

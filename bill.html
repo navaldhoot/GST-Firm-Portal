@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" href="favicongst.ico" />
+
+	<title>Bill Input Form</title>
+	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet'>
+	<link rel="stylesheet" type="text/css" href="css/bill.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+  <style>
+  body{
+	  background:white!important;
+  }
+  .header{
+	padding:0px;
+	background:white;
+}
+.logo img{
+	height:180px;
+}
+.heading h1
+{
+font-family: Open Sans, sans-serif;
+font-weight: 800;
+font-size: 45px;
+text-align:left!important;
+}
+.heading h3
+{
+font-family: Open Sans, sans-serif;
+font-weight: normal;
+font-size: 30px;
+}
+
+.head-under {
+	width:300px;
+    border: 2px solid #0a4bff;
+    margin-right: 50%;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+.login-menu{
+background:#235c73;
+}
+
+.login-menu a{
+color:white;
+text-decoration:none;
+font-size:20px;
+font-weight:300;
+
+}
+
+.login-menu ul li{
+display:inline-block;
+padding:10px;	
+}
+
+.menu-center{
+text-align:center;
+}
+footer{
+background:#235c73;
+text-align:center;
+color:white;
+font-size:20px;
+}
+  
+  </style>
+
+
+	<script type="text/javascript">
+
+	
+	jQuery(function(){
+    var counter = 1;
+	
+
+    jQuery('button.add-row').click(function(event){
+        event.preventDefault();
+
+        var newRow = jQuery('<tr><td>'+
+		counter + '</td><td><input type="text" name="item'+
+		counter + '" id="item'+counter+'"/></td><td><input type="text" name="quantity'+
+		counter + '" id="quantity'+counter+'"/></td><td><input type="text" name="rate'+
+		counter + '" id="rate'+counter+'"/></td><td><input type="text" name="per'+
+		counter + '" id="per'+counter+'"/></td></tr>');
+	            counter++;
+        jQuery('table.item-addition').append(newRow);
+
+    });
+
+	
+	});
+
+</script>
+	
+
+
+
+
+</head>
+<body>
+
+		<div class="container-fluid">
+		<div class="row header">
+            <div class="col-md-4 col-sm-4 logo">
+                	<img src="images/logo.png" alt="gst Icon">
+            </div>
+            <div class="col-md-8 col-sm-8 heading">
+				<h1>GST Firm Portal</h1>      
+				<hr class="head-under">
+				<h3>Mission, Vision & Values</h3>
+			</div>
+		</div>			
+
+	<!---------------------MENU ------------------------->
+	<div class="row login-menu">
+	
+	<div class="col-md-12 menu-center">
+
+				<ul>
+				<li><a href="login_homepage.html">Home</a></li>
+				<li><a href="profile_page.php">Profile</a></li>
+				<li><a href="item.html">Products</a></li>
+				<li><a href="purchase.html">Purchases</a></li>
+				<li><a href="#">Bill Generation</a></li>
+				<li><a href="table.php">Table Representation</a></li>
+				<li><a href="bank.html">Bank Details</a></li>
+   			<li class="logout"><a href="logout.php"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+			<ul>
+
+	</div>
+	</div>
+	
+
+
+
+
+		<h1> Bill Input </h1>
+		
+		<form action="bill_amount.php" method="post" ><!--oninput="to.value=Math.round(quantity1.value*rate1.value*(1+per1.value/100));t.value=Math.round(quantity1.value*rate1.value)"-->
+
+	<h2>Firm Side Information</h2>
+	<div class="row">
+		<div class="col-md-4">
+		
+			<p><b>Invoice No.</b></p>
+		</div>
+		<div class="col-md-8">
+		
+			<input type="text" name="invoice_no">
+			</div>
+
+	</div>
+	
+	<div class="row">
+		<div class="col-md-4">
+				<p><b>Bill Date<b></p>
+		
+		</div>
+		<div class="col-md-8">
+		
+			<input type="date" name="bill_date">
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Firm Delivery Note</b></p>
+		
+		</div>
+		<div class="col-md-8">
+		
+			<input type="text" name="firm_delivery_note"> 
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+		
+			<p><b>Mode/Terms Of Payment</b></p>
+		</div>
+		<div class="col-md-8">
+			 <select name="mod_of_payment">
+					<option value="Cash">Cash</option>
+					<option value="Cheque">Cheque</option>
+					<option value="Credit Card">Credit Card</option>
+					<option value="Debit Card">Debit Card</option>
+			</select> 	
+			<!--<input type="text" name="mod_of_payment">-->
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Supplier Ref.</b></p>
+		
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="supplier_ref">
+		
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+		
+			<p><b>Other Reference's</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="other_ref"> 
+		
+		</div>
+	
+	
+	
+	</div>
+	
+	
+		<h2>Buyer Information</h2>
+	<div class="row">
+	
+		<div class="col-md-4">
+			<p><b>Buyer's Firm Name</b></p>
+		
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="buyer_name">
+			
+		</div>
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+		
+			<p><b>Buyer's Address<p>
+		</div>
+		<div class="col-md-8">
+			<textarea cols="50" rows="7"  name="buyer_address"></textarea>
+		
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Buyer's GSTIN No.<p></b>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="buyer_gstin_no">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Buyer's Order No.</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="buyer_order_no">
+		</div>
+		
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Order Date</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="date" name="order_date">
+		</div>
+
+	
+	
+	
+	</div>
+	<div class="row">
+	
+		<div class="col-md-4">
+			<p><b>Buyer Despatch Document no.</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="despatch_document_no"> 
+		</div>
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Delivery Note Date</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="date" name="delivery_note_date">
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+	
+		<div class="col-md-4">
+			<p><b>Depatched Through</b></p>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="despatched_through">
+		</div>
+	
+	
+	
+	</div>
+	<div class="row">
+		<div class="col-md-4">
+			<p><b>Destination</p></b>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="destination">
+		</div>
+	
+	
+	
+	
+	</div>
+	<div class="row">
+	
+		<div class="col-md-4">
+			<p><b>Terms of Delivery</p></b>
+		</div>
+		<div class="col-md-8">
+			<input type="text" name="terms_of_delivery">
+		</div>
+	</div>
+	
+	<h2>Item Description</h2>
+	<table class="item-addition">
+		
+	<tr>
+			<th>S.NO.</th>
+			<th>Item Name</th>
+			<th>Quanity</th>
+			<th>Rate</th>
+			<th>Rate Per. Unit</th>
+			
+			
+	</tr>
+	
+	</table>
+		<button href="#" title="" class="add-row" onclick="increment()">Add Row</button>
+	<script type="text/javascript">
+
+		var i=0;
+	function increment()
+	{
+		i=i+1;
+		document.getElementById("NumRows").value= i	;
+	}
+
+	</script>
+	</div>
+	<br>
+	<br><br><br>
+	
+	<input type="submit" id="submit"   value="Submit" name="Submit">
+	<input type="reset" name="Cancel">
+	
+	
+	
+	<input name="NumRows" id="NumRows" type="hidden" >
+	
+ 	</form>
+			<!-- FOOTER ROW--->
+	<div class="row">
+		<footer>Copyright &copy;
+		ANNS
+		</footer>
+	</div>
+	<!-- END OF FOOTER ROW----------->
+
+
+
+
+
+
+
+
+
+	
+</body>
+</html>
