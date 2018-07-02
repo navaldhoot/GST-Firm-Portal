@@ -1,0 +1,48 @@
+body{
+	font-family:'Lato'!important;
+	
+}
+body p{
+	text-align:center;
+}
+
+
+.container-fluid{
+	padding:0px!important;
+}
+
+.reghead{
+	color:black;
+	font-size:40px;
+	font-weight:900;
+	text-align:center;
+}
+
+.regsubhead{
+	color:black;
+	font-size:30px;
+	text-align:center;
+	font-weight:400;
+	
+}
+.name input {
+	width:200px;
+	
+}
+form p{
+	font-size:25px;
+	font-weight:100;
+	color:black;
+	
+}
+
+.sub{
+	border:none;
+	background:#ff4343;
+	color:black;
+	padding:10px;
+	text-align:center;
+	font-size:25px;
+	font-weight:400;
+	margin:10px;
+}

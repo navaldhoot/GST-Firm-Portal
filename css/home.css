@@ -1,0 +1,147 @@
+/************ HEADER  ROW STYLE **********?	
+/*******SLIDESHOW *****************************/
+
+		.mySlides {
+			display:none;
+		}
+
+		/* Slideshow container */
+		.slideshow-container {
+		  position: relative;
+		  margin: auto;
+		  height:600px;
+		  overflow:hidden;
+		background:100% 100%;
+		  }
+		@media only screen and (max-width:900px){
+		.slideshow-container {
+		  margin: auto;
+		  height:500px;
+
+		}
+		}
+		/* The dots/bullets/indicators */
+		.dot-container{
+		position:absolute;
+		bottom:5%;
+		width:100%;	
+		}
+
+		.dot {
+		  height: 13px;
+		  width: 13px;
+		  margin: 0 2px;
+		  background-color: #bbb;
+		  border-radius: 50%;
+		  display: inline-block;
+		  transition: background-color 0.6s ease;
+		}
+
+		.active {
+		  background-color: #717171;
+		}
+
+		/* Fading animation */
+		.effect {
+			
+		  -webkit-animation-name: effect;
+		  -webkit-animation-duration: 1.5s;
+		  animation-name: effect;
+		  animation-duration: 1.5s;
+		}
+
+		@-webkit-keyframes effect {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		@keyframes effect {
+		  from {opacity: .4} 
+		  to {opacity: 1}
+		}
+
+		/* On smaller screens, decrease text size */
+		@media only screen and (min-width: 300px) {
+		 
+
+		.imgshow{
+			background-size:cover;
+			width:auto;
+			width:100%;
+			
+		}
+		}
+		@media screen and (max-width:700px){
+			.imgshow{
+				height:100%;
+				width:auto;
+			}
+			.mySlides{
+				height:100%;
+				width:auto;
+			}
+		}
+		
+		
+/*************************/
+
+
+/******** FEATURE ROW STYLE **************/
+		.feature{
+			margin:0;
+			font-size:40px;
+
+			background-color:#11252d;
+			background-image:linear-gradient(to bottom,rgba(17, 37, 45,0.6),rgba(17, 37, 45,0.8),#11252d,#11252d,#11252d,#11252d ),url("../images/featureback.jpg");
+			background-size:cover;
+			
+		}
+		.fhead{
+			font-size:60px;
+			color:white !important;
+			text-align:center;
+			}
+		
+		.fpt{
+				color:white;
+				float:left;
+				font-size:86px;
+		}
+		.ftxt{
+				color:#6c95a5;
+				font-size:16px;
+		}
+
+		.f1{
+			width:500px !important;
+			margin:30px 30px 30px 120px !important;
+		}
+
+		.f2{
+			width:500px !important;
+			text-align:center;
+			margin:30px 120px 30px 30px !important;
+		}
+		
+		.fdiv{
+		text-align:center!important;
+		padding-left:30px;
+		padding-top:15px;
+		}
+		.fh3:hover{
+			color:white!important;
+		}
+/**** FEATURE ROW STYLE END************/	
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,106 @@
+/****** MAIN TAG STYLES ************/	
+	body{
+		font-family: 'Lato' !important;
+	}
+
+
+	
+	
+	/*p,h1,h2,h3,h4,h5,h6{
+		font-family:monospace;
+	}*/
+
+	a:hover{
+		color:inherit!important;
+		text-decoration:none!important;
+	}
+	
+	
+/*******  END OF MAIN TAG TAG STYLE *************/
+
+
+
+/******	MENU  ROW STYLE *************/
+ 	.menu{
+		text-align:center;
+		background: #235c73;
+		z-index: 99;
+		margin:0!important;
+		position:relative !important; 
+	
+	}
+	
+
+	.menuhead{
+		color:white;
+		font-size:30px;
+		font-weight:800;
+		
+		
+	}
+	
+	.navigation{
+		background:rgba(51,51,51,0);
+	}
+	.navigation>ul {
+		padding:20px 30px;
+		margin: 0;
+		list-style-type: none; 
+	}
+	.navigation>ul >li>a{
+		color:white;
+	}
+	.navigation li{
+		padding:0 25px;
+		font-size:20px;
+		text-decoration:none;
+	}
+	.navigation ul li {
+		display: inline; 
+	}
+	
+
+
+/*************************/
+  .header{
+	padding:0px;
+	background:white;
+}
+.logo img{
+	height:180px;
+}
+.heading h1
+{
+font-family: Open Sans, sans-serif;
+font-weight: 800;
+font-size: 45px;
+}
+.heading h3
+{
+font-family: Open Sans, sans-serif;
+font-weight: normal;
+font-size: 30px;
+}
+
+.head-under {
+	width:300px;
+    border: 2px solid #0a4bff;
+    margin-right: 50%;
+    margin-left: 0;
+    margin-top: 8px;
+}
+
+
+
+/**  FOOTER STYLE *********/
+	footer{
+		background-color:#235c73;
+		color:white;
+
+		font-size:20px;
+		font-weight:400;
+		text-align:center;
+		padding:10px 0 0 0;
+	}
+	
+/*** FOOTER STYLE END ********/	
